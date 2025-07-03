@@ -116,7 +116,7 @@ body {
   background: #e9e9e9;
   font-size: 16px;
 }
-.box3days__day_tasks ul{
+.box3days__day_tasks ul {
   display: flex;
   flex-flow: column;
   gap: 10px;
@@ -128,29 +128,33 @@ body {
   user-select: none;
   display: flex;
   justify-content: space-between;
-  background: #D9D9D9;
-  
+  background: #d9d9d9;
 }
-.box3days__day_tasks_list_icons{
+.box3days__day_tasks_list_icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 72px;
 }
-.box3days__day_tasks_list_icons-do{
+.box3days__day_tasks_list_icons-do {
   width: 20px;
   height: 20px;
   border-radius: 2px;
-   border: 2px solid #E7F341;
-   cursor: pointer;
+  border: 2px solid #e7f341;
+  cursor: pointer;
 }
-.box3days__day_tasks_list_icons-done{
+.box3days__day_tasks_list_icons-do_cheked {
+  background: #e7f341;
+}
+.box3days__day_tasks_list_icons-done {
   width: 20px;
   height: 20px;
   border-radius: 2px;
-   border: 2px solid #39E63E;
-   cursor: pointer;
-
+  border: 2px solid #39e63e;
+  cursor: pointer;
+}
+.box3days__day_tasks_list_icons-done_cheked {
+  background: #39e63e;
 }
 .box3days__day_tasks_list_icons img {
   cursor: pointer;
