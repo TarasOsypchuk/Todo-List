@@ -59,3 +59,30 @@ function showTask() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask();
+
+function formatDate(date) {
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  return `${day}/${month}`;
+}
+const today = new Date();
+
+const yesterday = new Date(today);
+yesterday.setDate(today.getDate() - 1);
+
+const tomorrow = new Date(today);
+tomorrow.setDate(today.getDate() + 1);
+
+document.getElementById("date-yesterday").textContent = formatDate(yesterday);
+document.getElementById("date-today").textContent = formatDate(today);
+document.getElementById("date-tomorrow").textContent = formatDate(tomorrow);
+
+function getWeekday(date) {
+  return date.toLocaleDateString("en-US", {
+    weekday: "long",
+  });
+}
+
+document.getElementById("weekday-yesterday").textContent = getWeekday(yesterday);
+document.getElementById("weekday-today").textContent = getWeekday(today);
+document.getElementById("weekday-tomorrow").textContent = getWeekday(tomorrow);
